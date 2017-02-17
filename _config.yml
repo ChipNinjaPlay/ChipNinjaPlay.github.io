@@ -1,0 +1,3 @@
+name: Lulz Entertainment
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title

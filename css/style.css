@@ -1,0 +1,154 @@
+/** Sobre a interação do display total com o resto da página:
+ *no cabeçalho temos 64px - 60px de altura + 4px de margem abaixo;
+ *no corpo temos um valor variavel;
+ *no rodapé temos 106px - 102px de altura + 4px de margem acima;
+ *no total temos 64+valor_variavel_conteudo+65 = 960px.
+ */
+
+
+/*fontes importadas*/
+@font-face {
+	font-family: "pixels";
+	src: url("../fonts/pixels.ttf");
+}
+
+@font-face {
+	font-family: "comicSans";
+	src: url("../fonts/comicSans.ttf");
+}
+
+@font-face {
+	font-family: "diskun";
+	src: url("../fonts/diskun.ttf");
+}
+/*corpo*/
+* {
+	padding:0;
+}
+
+body {
+}
+
+.box {
+	min-height:960px;
+	position:relative;
+	background-image: url("../img/12_col.gif");
+	font-family:Georgia, serif;
+}
+
+/*cabeçalho*/
+.topo {
+	background-color:white;
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+	border-left:1px solid rgba(220,220,220, 0.5);
+	border-right:1px solid rgba(220,220,220, 0.5);
+	border-bottom: 4px double rgba(220,220,220, 0.5);
+}
+.logo {
+	padding-top:10px;
+	height:100%;
+}
+
+.logo a {
+	text-decoration: none;
+	font-size:2em;
+	color:orange;
+	font-family:"comicSans";
+}
+
+.asimov {
+	
+}
+
+.asimov img {
+	max-width: 45%;
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+/*botões*/
+
+.navbar .button {
+	height: 36px;
+	/*border: 2px ridge rgb(220,220,220);*/
+	color: rgb(255,255,255);
+	font-family:  "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	margin-top:10px;
+	
+	/*gradients, border-radius e shadow*/
+
+	background: #00b7ea; /* Old browsers */
+	background: -moz-linear-gradient(top, #00b7ea 0%, #009ec3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #00b7ea 0%,#009ec3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+
+	border-radius:5px;
+
+	box-shadow: 5px 5px 5px grey;
+}
+
+.navbar a.button {
+	text-decoration: none;
+	line-height: 36px;
+	text-align:center;
+}
+
+/*conteúdo*/
+
+
+.content {
+	height:831px;
+	background-image: url("../img/pixel_art.png");
+	background-size: cover;
+	border-left:1px solid rgba(220,220,220, 0.5);
+	border-right:1px solid rgba(220,220,220, 0.5);
+}
+
+/*rodapé*/
+.rodape {
+	background-color:white;
+	width:100%;
+	height:65px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	display:flex;
+	flex-direction: row;
+	border-top:4px double rgba(220,220,220, 0.5);
+	border-left:1px solid rgba(220,220,220, 0.5);
+	border-right:1px solid rgba(220,220,220, 0.5);
+}
+.rodape .call {
+	justify-content:flex-start;
+}
+
+/*rodapé > licença*/
+
+.rodape .license {
+	padding-top: 12.5px;
+	justify-content:center;
+}
+
+.rodape .license img {
+}
+
+/*fim_rodapé*/
+
+.rodape .share {
+	display:flex;
+	justify-content: flex-end;
+}
+.rodape .share img {
+	height:40px;
+	padding-top: 7.5px;
+
+}

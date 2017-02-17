@@ -1,0 +1,12 @@
+/*estilo dos créditos*/
+
+.credits {
+	width:300px;
+	margin: auto;
+	padding-left:20px;
+	font-family:"pixels";
+}
+
+.credits a {
+	text-decoration: none;
+}
