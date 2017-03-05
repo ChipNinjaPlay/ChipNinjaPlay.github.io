@@ -7,7 +7,7 @@ var $galery_styling = $('<link rel="stylesheet" type="text/css" href="../galeria
 var $credits_styling = $('<link rel="stylesheet" type="text/css" href="../colaboradores/main.css">');
 
 var $classes = ['.viewer', '.posts', '.galeria', '.credits'];
-var $serach = '';
+var $search = '';
 
 //a função toma um laço de repetição que checa cada uma das classes em $classes
 //$search toma a saida da função find, que pode ser verdadeiro ou falso para a existência da classe
