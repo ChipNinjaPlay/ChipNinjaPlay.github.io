@@ -1,3 +1,4 @@
+
 //estilo basico
 var $basic_styling = $('<link rel="stylesheet" type="text/css" href="../css/normalize.css"><link rel="stylesheet" type="text/css" href="../css/960.css"><link rel="stylesheet" type="text/css" href="../css/style.css">')
 
@@ -50,6 +51,9 @@ var leading = function() {
 				alert("há algo errado!");
 		}
 	}
+	
+	$('.box').css('display', 'inherit');//visualizando a pagina carregada
+	
 };
 
 //aqui o jquery executa a função quando a página estiver totalmente carregada, evitando conflitos
