@@ -52,7 +52,7 @@ var leading = function() {
 		}
 	}
 	
-	$('body').css('display', 'inherit');//visualizando a pagina carregada
+	$('body').css('display', 'initial');//visualizando a pagina carregada
 	
 };
 
